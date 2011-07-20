@@ -2,26 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>New Project</title>
+  <title>StudyBuddy</title>
   <meta name="author" content="Peng Zhong">
   <link rel="stylesheet" media="screen" href="c/style.css?v=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
-  <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script> 
-  <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script> 
-  <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script> 
-  <script src="js/script.js"></script>
+  <script src="j/jquery.js"></script>
+  <script src="j/jquery-ui.js"></script>
+  <script src="j/jquery.tmpl.min.js"></script>
+  <script src="j/jquery.noisy.min.js"></script>
+  <script src="j/script.js"></script>
 </head>
 
-<body>
+<body class="site index">
 
-<header>
-  <h1><a href="#">Clean Slate</a></h1>
+<header class="site">
+  <a class="branding" href="/">
+    <img src="i/logo.png" alt="Logo" height="52" width="40">
+    <h1>StudyBuddy</h1>
+    <p class="tagline">Find the perfect school in Australia</p>
+  </a>
+  <nav class="site">
+    <ul>
+      <li><a href="#">Link</a>
+      <li><a href="#">Link</a>
+      <li><a href="#">Link</a>
+    </ul>
+  </nav>
 </header>
 
-<div class="content">
-  <p>Hi!</p>
+<div class="site container">
+  <header class="section">
+    <h1>Find the perfect school in less than 5 seconds</h1>
+  </header>
+  <div class="content">
+    <form action="results.html">
+      <ul class="fields">
+        <li class="field">Hi, my name is <a href="#">Jane Smith</a>.
+        <li class="field">I&rsquo;m a <a href="#">female</a> and <a href="#">25</a> years old.</p>
+        <li class="field">I&rsquo;m looking for a <a href="#">university</a> located in <a href="#">Tasmania</a>.
+        <li class="field submit">
+          <input type="submit" value="Search">
+      </ul>
+    </form>
+  </div>
 </div>
 
-<footer>
-  <p>&copy; 2011 <a href="//nylira.com">Peng Zhong</a></p>
+<footer class="site">
+  <p>&copy; 2011 <a href="/">StudyBuddy</a></p>
 </footer>

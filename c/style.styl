@@ -9,7 +9,7 @@ df()
   ff sans
   c #333
 
-link = #0be
+link = hsl(203,94,51)
 hover = #0cf
 
 a
@@ -23,14 +23,8 @@ html
 
 body
   df()
-  bg #fff
   oy scroll
+  background linear-gradient(top, hsl(192,63,97), hsl(112,46,66)) fixed
 
-  .content
-    w 200px
-    h 100px
-    m 0 auto
-    bg #f00
-    s x*4
-    bz 5px #000 #f00 #0f0 #00f
-    abs top 20px right 20px
+@import 'partials/all'
+@import 'pages/all'

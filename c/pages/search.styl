@@ -1,0 +1,70 @@
+body.search.results
+  .container.site
+    cnt()
+    bt 1px solid hsl(204,2,88)
+    bg m242
+    box-shadow b15 0 0 1em
+    border-radius 20px
+
+    header.section
+      ta center
+      p 50px 100px 36px
+      h1
+        f 20px/2 sans
+        c m68
+        a
+          f italic 30px/1.13 serif
+          td underline
+          display inline-block
+          p 0 .2em
+          aa()
+        
+    .content
+      ul.results
+        p 0 15px 15px
+        clearfix()
+        li.result
+          width 290px
+          float left
+          m 10px
+          bg #fff
+          box-shadow b7 .1em .1em .5em
+          img
+            h 180px
+            w auto
+            d block
+            m 1.5em auto
+          header.result
+            clearfix()
+            bt 1px solid m204
+            m 0 x
+            p 1.25em 0 1em
+            position relative
+            .title
+              float left
+              w 250px
+              box-sizing border-box
+              h1
+                c m16
+                bb 2px solid m238
+                f bold 18px/1.5 sans
+                display inline-block
+              p.province
+                c m153
+                f bold 12px/1.5 sans
+            
+            .type
+              absolute top 2em right 0
+              bg hsl(206,100,50)
+              border-radius .75em
+              f bold 12px/1.5 sans
+              c #fff
+              ta center
+              p 0 .75em
+              aa()
+
+          .content
+            p 0 x x
+            f 12px/1.5 sans
+            c #666
+

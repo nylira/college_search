@@ -1,0 +1,40 @@
+header.site
+  cnt()
+  height 120px
+
+  a.branding
+    col 4
+    d block
+    pt 40px
+
+    img
+      d block
+      float left
+      m 0 9px 0 18px
+
+    h1
+      f bold 24px/1.2 sans
+      c hsl(30,33,24)
+      text-shadow w50 0 1px 0
+
+    p.tagline
+      f 14px/1.5 sans
+      c m170
+      text-shadow w50 0 1px 0
+
+  nav.site
+    col 8
+    ul
+      float right
+      p 54px 0
+      li
+        float left
+        f 12px/1 sans
+        &:not(:last-of-type)
+          br 1px solid m122
+        a
+          c m122
+          p 0 .7em
+          &:hover
+            c link
+

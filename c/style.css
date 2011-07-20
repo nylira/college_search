@@ -1,4 +1,4 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:top;outline:none}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:top;outline:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 blockquote,q{quotes:none}
 blockquote:before,blockquote:after,q:before,q:after{content:none}
@@ -10,15 +10,59 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 ul,ol{list-style:none}
 :focus{outline:none}
-div,fieldset,input,textarea{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 strong{font-weight:bold}
 em{font-style:italic}
-::-webkit-scrollbar{width:.5em;height:.5em}
-::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:start:increement{height:0;display:block;background:transparent}
-::-webkit-scrollbar-track-piece{background:transparent}
-::-webkit-scrollbar-thumb:vertical{height:40px;background:rgba(0,0,0,0.3);-webkit-border-radius:.25em;-moz-border-radius:.25em;border-radius:.25em}
-a{c:#0be;text-decoration:none;}
-a:hover,a:focus{c:#0cf}
+spa.namp{font-family:Baskerville,Palatino,"Book Antiqua",Georgia,"serif";font-style:italic}
+*::selection{background:#ffffe0}
+*::-moz-selection{background:#ffffe0}
+*::-webkit-selection{background:#ffffe0}
+a{color:#0d9df8;text-decoration:none;}
+a:hover,a:focus{color:#0cf}
 html{height:100%}
-body{font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;c:#333;background:#fff;overflow-y:scroll;}
-body .content{width:200px;height:100px;margin:0 auto;background:#f00;font-size:56px;border-top:5px solid #000;border-right:5px solid #f00;border-bottom:5px solid #0f0;border-left:5px solid #00f;position:absolute;top:20px;right:20px}
+body{font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;overflow-y:scroll;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f3fafc), color-stop(1, #8bd080)) fixed;background:-webkit-linear-gradient(top, #f3fafc 0%, #8bd080 100%) fixed;background:-moz-linear-gradient(top, #f3fafc 0%, #8bd080 100%) fixed;background:linear-gradient(top, #f3fafc 0%, #8bd080 100%) fixed}
+header.site{width:960px;margin:0 auto;zoom:1;height:120px;}
+header.site:before,header.site:after{content:"";display:table}
+header.site:after{clear:both}
+header.site a.branding{width:320px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;display:block;padding-top:40px;}
+header.site a.branding img{display:block;float:left;margin:0 9px 0 18px}
+header.site a.branding h1{font:bold 24px/1.2 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#513d29;text-shadow:rgba(255,255,255,0.5) 0 1px 0}
+header.site a.branding p.tagline{font:14px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#aaa;text-shadow:rgba(255,255,255,0.5) 0 1px 0}
+header.site nav.site{width:640px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;}
+header.site nav.site ul{float:right;padding:54px 0;}
+header.site nav.site ul li{float:left;font:12px/1 "Helvetica Neue",Arial,Helvetica,sans-serif;}
+header.site nav.site ul li:not(:last-of-type){border-right:1px solid #7a7a7a}
+header.site nav.site ul li a{color:#7a7a7a;padding:0 .7em;}
+header.site nav.site ul li a:hover{color:#0d9df8}
+footer.site{width:960px;margin:0 auto;zoom:1;padding:2em 0;}
+footer.site:before,footer.site:after{content:"";display:table}
+footer.site:after{clear:both}
+footer.site p{padding:0 1.5em}
+body.site.index .container.site{width:960px;margin:0 auto;zoom:1;border-top:1px solid #e0e1e1;background:#f2f2f2;-webkit-box-shadow:rgba(0,0,0,0.15) 0 0 1em;-moz-box-shadow:rgba(0,0,0,0.15) 0 0 1em;box-shadow:rgba(0,0,0,0.15) 0 0 1em;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;}
+body.site.index .container.site:before,body.site.index .container.site:after{content:"";display:table}
+body.site.index .container.site:after{clear:both}
+body.site.index .container.site header.section{text-align:center;padding:50px 100px 36px;}
+body.site.index .container.site header.section h1{font:bold 34px/2 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#000;border-bottom:2px solid #d6d6d6}
+body.site.index .container.site .content form{text-align:center;}
+body.site.index .container.site .content form ul.fields li.field{font:26px/2.5 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#444;}
+body.site.index .container.site .content form ul.fields li.field a{text-decoration:underline;font-family:Georgia,"serif";font-style:italic;-webkit-font-smoothing:antialiased}
+body.site.index .container.site .content form ul.fields li.field.submit{padding:1em 0 50px;}
+body.site.index .container.site .content form ul.fields li.field.submit input{display:inline-block;-webkit-border-radius:14px;-moz-border-radius:14px;border-radius:14px;padding:17px 0;width:200px;background:#4a8efc;border:none;font:bold 24px/1 "Helvetica Neue",Arial,Helvetica,sans-serif;text-align:center;text-transform:uppercase;color:#fff;text-shadow:rgba(0,0,0,0.5) 1px 1px .2em}
+body.search.results .container.site{width:960px;margin:0 auto;zoom:1;border-top:1px solid #e0e1e1;background:#f2f2f2;-webkit-box-shadow:rgba(0,0,0,0.15) 0 0 1em;-moz-box-shadow:rgba(0,0,0,0.15) 0 0 1em;box-shadow:rgba(0,0,0,0.15) 0 0 1em;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;}
+body.search.results .container.site:before,body.search.results .container.site:after{content:"";display:table}
+body.search.results .container.site:after{clear:both}
+body.search.results .container.site header.section{text-align:center;padding:50px 100px 36px;}
+body.search.results .container.site header.section h1{font:20px/2 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#444;}
+body.search.results .container.site header.section h1 a{font:italic 30px/1.13 Georgia,"serif";text-decoration:underline;display:inline-block;padding:0 .2em;-webkit-font-smoothing:antialiased}
+body.search.results .container.site .content ul.results{padding:0 15px 15px;zoom:1;}
+body.search.results .container.site .content ul.results:before,body.search.results .container.site .content ul.results:after{content:"";display:table}
+body.search.results .container.site .content ul.results:after{clear:both}
+body.search.results .container.site .content ul.results li.result{width:290px;float:left;margin:10px;background:#fff;-webkit-box-shadow:rgba(0,0,0,0.07) .1em .1em .5em;-moz-box-shadow:rgba(0,0,0,0.07) .1em .1em .5em;box-shadow:rgba(0,0,0,0.07) .1em .1em .5em;}
+body.search.results .container.site .content ul.results li.result img{height:180px;width:auto;display:block;margin:1.5em auto}
+body.search.results .container.site .content ul.results li.result header.result{zoom:1;border-top:1px solid #ccc;margin:0 14px;padding:1.25em 0 1em;position:relative;}
+body.search.results .container.site .content ul.results li.result header.result:before,body.search.results .container.site .content ul.results li.result header.result:after{content:"";display:table}
+body.search.results .container.site .content ul.results li.result header.result:after{clear:both}
+body.search.results .container.site .content ul.results li.result header.result .title{float:left;width:250px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+body.search.results .container.site .content ul.results li.result header.result .title h1{color:#101010;border-bottom:2px solid #eee;font:bold 18px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;display:inline-block}
+body.search.results .container.site .content ul.results li.result header.result .title p.province{color:#999;font:bold 12px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif}
+body.search.results .container.site .content ul.results li.result header.result .type{position:absolute;top:2em;right:0;background:#0091ff;-webkit-border-radius:.75em;-moz-border-radius:.75em;border-radius:.75em;font:bold 12px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#fff;text-align:center;padding:0 .75em;-webkit-font-smoothing:antialiased}
+body.search.results .container.site .content ul.results li.result .content{padding:0 14px 14px;font:12px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;color:#666}
